@@ -1,0 +1,17 @@
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+<div>
+  <h2>{{gameForm.title}}</h2>
+  <select>
+    <option value="0">--Choose the type--</option>
+    <option *ngFor="let type of numberTypeDictionary" value="type.id" (click)="onSelect(type.id)">
+      {{type.name}}
+    </option>
+  </select>
+
+  {{gameForm.numberType}}
+</div>
+

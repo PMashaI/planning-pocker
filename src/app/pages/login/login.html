@@ -1,0 +1,9 @@
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+<h2>{{loginForm.title}}</h2>
+<input [value]="userName" (input)="userName = $event.target.value">
+<button routerLink="/game/{{userName}}">Start new game !</button>
+
